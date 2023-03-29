@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/96.0.0.0"}
+headers = {}
 url = 'https://www.trendyol.com/sr?wc=103108&os=1&sk=1&sst=BEST_SELLER&pi=1'
 response = requests.get(url, headers=headers)
 html_request = response.content
